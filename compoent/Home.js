@@ -20,7 +20,7 @@ export default function App({navigation}) {
     <ScrollView>
     <View style={styles.container}>
         {data.map((number) => 
-        <View style={styles.box}  >
+        <View key={number._id} style={styles.box}  >
       <Text>{number.title}</Text>
       <Image
      
@@ -31,7 +31,7 @@ export default function App({navigation}) {
         title="News"
         onPress={() => 
             navigation.navigate('News', {
-                itemId: 86,
+                itemId: number.title,
                 otherParam: number.slug,
               })
     

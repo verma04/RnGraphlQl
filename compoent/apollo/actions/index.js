@@ -17,7 +17,7 @@ import {
   CREATE_EVENT 
  
  
-} from '@/apollo/queries'
+} from '../queries/index'
 
 
 
